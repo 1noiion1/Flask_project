@@ -1,16 +1,20 @@
 from app import app
 
+
 @app.route('/hello')
 def hello():
     return f'Hello, world!'
+
 
 @app.route('/info')
 def info():
     return f'This is an informational page'
 
+
 @app.route('/calc/<int:numb_1>/<int:numb_2>')
 def calc(numb_1, numb_2):
     return f'The sum of {numb_1} and {numb_2} is {numb_1 + numb_2}'
+
 
 @app.route('/reverse/<text>')
 def reverse(text):
@@ -18,6 +22,7 @@ def reverse(text):
         return 'There are too few characters'
     else:
         return text[::-1]
+
 
 @app.route('/user/<name>/<int:age>')
 def user(name, age):
