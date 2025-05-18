@@ -1,32 +1,17 @@
 from app import app
+from flask import render_template
+
+@app.route('/')
+def home():
+    return render_template("index.html")
 
 
-@app.route('/hello')
-def hello():
-    return f'Hello, world!'
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 
-@app.route('/info')
-def info():
-    return f'This is an informational page'
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
-
-@app.route('/calc/<int:numb_1>/<int:numb_2>')
-def calc(numb_1, numb_2):
-    return f'The sum of {numb_1} and {numb_2} is {numb_1 + numb_2}'
-
-
-@app.route('/reverse/<text>')
-def reverse(text):
-    if len(text) < 1 or text == ' ':
-        return 'There are too few characters'
-    else:
-        return text[::-1]
-
-
-@app.route('/user/<name>/<int:age>')
-def user(name, age):
-    if age <= 0:
-        return 'You are too small'
-    else:
-        return f'Hello, {name}. You are {age} years old'
