@@ -1,0 +1,141 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url(https://www.shop.kostyor.ru/images/thumbnails/808/27206_5.jpg);
+}
+
+.cat-title {
+    font-size: 3rem;
+    color: #ff4500;
+    text-shadow: 3px 3px #ffa500;
+    margin-top: 40px;
+    animation: wobble 5s infinite;
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+
+.cat-form {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: #ffe4e1;
+    border: 5px dashed #ff4500;
+    border-radius: 60px;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cat-form input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #fffaf0;
+}
+
+.cat-form input[type="text"]:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.button {
+    background-color: #ff4500;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+    margin: 20px 0 0 0;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.button:hover {
+    background-color: #ff6347;
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.color-form {
+    padding: 15px;
+    margin: -53px 0 0 0;
+}
+
+
+input[type="color"] {
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+
+input[type="color"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #aaa;
+}
+
+
+.form-profession::before {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+
+#profession {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  min-width: 200px;
+}
+
+.level-hobbies {
+    margin: 15px 0 0 0;
+}
+
+.click {
+    margin: 10px;
+}
