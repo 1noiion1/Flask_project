@@ -49,3 +49,5 @@ def submit():
 
     else:
         return redirect(url_for("form"))
+
+
