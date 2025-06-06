@@ -112,4 +112,11 @@ textarea {
     margin: 20px 0 0 0;
 }
 
-
+.contact-info {
+    display: flex;
+    gap: 10px;
+    width: 550px;
+    margin: 20px auto 65px auto;
+    background: #ff00f091;
+    padding: 25px;
+}

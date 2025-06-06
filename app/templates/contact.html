@@ -17,4 +17,21 @@
         <button type="submit" class="button">Meow</button>
     </form>
 
+    <h3>Contact information</h3>
+    <div class="contact-info">
+        <div class="personal-info">
+            <p>Customer Care Department:</p>
+            <p>Name: {{contact_info.customer_service.name}}</p>
+            <p>Position: {{contact_info.customer_service.position}}</p>
+            <p>Phone number: {{contact_info.customer_service.phone}}</p>
+            <p>Email: {{contact_info.customer_service.email}}</p>
+        </div>
+        <div class="address">
+            <p>Address:</p>
+            <p>Street: {{contact_info.address.street}}</p>
+            <p>City: {{contact_info.address.city}}</p>
+            <p>Postal code: {{contact_info.address.postal_code}}</p>
+        </div>
+    </div>
+
 {% endblock %}
